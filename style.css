@@ -19,6 +19,10 @@ p, td {
   font-family: var(--font-family-heading);
 }
 
+.cardHeading {
+  font-family: var(--font-family-heading);
+}
+
 .subHeading {
   line-height: 2;
   font-family: var(--font-family-text);
@@ -109,22 +113,27 @@ a:hover {
 .specialization__card{
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
 }
 
 .specialization__card__image{
-  margin: 0, auto;
-  border: 1px solid blue;
+  border: 1px solid lightgrey;
+  border-top: 6px solid #F9A826;
 }
 
 .card__img{
   max-width: 100%;
   margin: 0 auto;
-  padding: 5% 15%;
+  padding: 5% 0%;
 }
 .specialization__card__button{
   align-self: end;
-  justify-self: end;
-  border: 1px solid green;
+  position: absolute;
+  right: -8%;
+  font-size: 2rem;
+  padding: 6%;
+  bottom: -10%;
+  border-radius: 50%;
+  background-color:#F9A826;
+  color:var(--white__background);
 }
 

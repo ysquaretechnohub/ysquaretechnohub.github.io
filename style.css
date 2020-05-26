@@ -2,9 +2,11 @@ html {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  background-color: #ffffff;
+  --blue__highlight: #1b2c4a;
+  --white__background: #ffffff;
   --font-family-text: 'Merriweather', serif;
   --font-family-heading: 'Archivo Narrow', sans-serif;
+  background-color: var(--white__background);
 }
 
 p, td {
@@ -27,31 +29,18 @@ p, td {
   font-family: var(--font-family-heading);
 }
 
+.image__offset{
+  margin-top: 10vh;
+}
 .specialization {
   padding: 2rem;
-  background-color: #fdfdfd;
-}
-
-.specialization__images {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.specialization__images div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.card__img {
-  width: 50%;
+  background-color: var(--white__background);
 }
 
 .bottom__border {
   padding: 1rem;
   margin: .5rem;
-  border-bottom: 1px solid #1b2c4a;
+  border-bottom: 1px solid var(--blue__highlight);
 }
 
 .remove {
@@ -78,45 +67,64 @@ p, td {
   box-shadow: none;
 }
 
-a{
-  /* color: #1b2c4a; */
+a {
+  text-decoration: none !important;
   font-family: var(--font-family-text);
+}
+
+button {
+  font-family: var(--font-family-text);
+}
+
+a:hover {
   text-decoration: none !important;
 }
 
-button{
-  font-family: var(--font-family-text);
-}
-a:hover{
-  /* color: #1b2c4a; */
-  text-decoration: none !important;
-}
-
-.btn__action{
-  margin-top: 10px;
+.btn__action {
   padding: 10px;
-  color: #1b2c4a;
-  background-color:  white;
-  border: 2px solid #1b2c4a;
-}
-
-.btn__action__outline__rounded{
   margin-top: 10px;
-  padding: 10px;
-  color: #1b2c4a;
-  background-color: white;
-  border: 2px solid #1b2c4a;
-  border-radius: 50%; 
+  color: var(--blue__highlight);
+  border: 2px solid var(--blue__highlight);
+  background-color: var(--white__background);
 }
 
-.btn__action:hover{
+.btn__action__outline__rounded {
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 50%;
+  color: var(--blue__highlight);
+  border: 2px solid var(--blue__highlight);
+  background-color: var(--white__background);
+}
+
+.btn__action:hover {
+  color: var(--blue__highlight);
   border-radius: 10px 0px 10px 0px;
-  color: #1b2c4a;
 }
-.btn__submit{
+
+.btn__submit {
   float: right;
 }
-/* 
-input::placeholder{
-  color:;
-} */
+
+.specialization__card{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+}
+
+.specialization__card__image{
+  margin: 0, auto;
+  border: 1px solid blue;
+}
+
+.card__img{
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 5% 15%;
+}
+.specialization__card__button{
+  align-self: end;
+  justify-self: end;
+  border: 1px solid green;
+}
+

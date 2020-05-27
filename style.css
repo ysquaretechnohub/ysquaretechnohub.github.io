@@ -13,6 +13,9 @@ p, td {
   font-family: var(--font-family-text);
 }
 
+.navbar{
+  background-color: var(--white__background);
+}
 .mainHeading {
   margin-top: 25vh;
   font-size: 4rem;
@@ -27,19 +30,22 @@ p, td {
   line-height: 2;
   font-family: var(--font-family-text);
 }
-
+section{
+  margin-top: 3rem;
+}
 .section__heading {
   text-align: center;
   font-family: var(--font-family-heading);
 }
 
 .image__offset{
-  margin-top: 10vh;
+  margin-top: 25vh;
 }
 .specialization {
   padding: 2rem;
   background-color: var(--white__background);
 }
+
 
 .bottom__border {
   padding: 1rem;
@@ -137,3 +143,6 @@ a:hover {
   color:var(--white__background);
 }
 
+.footer{
+  background-color: #111111;
+}

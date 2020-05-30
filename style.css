@@ -3,6 +3,7 @@ html {
   padding: 0;
   scroll-behavior: smooth;
   --blue__highlight: #1b2c4a;
+  --blue__highlight_transparent: rgba(27,44,58,0.45);
   --white__background: #ffffff;
   --font-family-text: 'Merriweather', serif;
   --font-family-heading: 'Archivo Narrow', sans-serif;
@@ -115,34 +116,26 @@ a:hover {
 .btn__submit {
   float: right;
 }
-
-.specialization__card{
-  display: flex;
-  flex-direction: column;
+.cardIcons{
+  font-size: 5rem;
 }
 
-.specialization__card__image{
-  border: 1px solid lightgrey;
-  border-top: 6px solid #F9A826;
+.specialization{
+  min-height: 50vh;
+  background-image: 
+    linear-gradient(
+      rgba(27, 44, 150, 0.45), 
+      rgba(0, 0, 255, 0.45)
+    ),
+    url('./assets/center_background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
 }
-
-.card__img{
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 5% 0%;
+.specialization-card{
+  background-color: var(--white__background);
 }
-.specialization__card__button{
-  align-self: end;
-  position: absolute;
-  right: -8%;
-  font-size: 2rem;
-  padding: 6%;
-  bottom: -10%;
-  border-radius: 50%;
-  background-color:#F9A826;
-  color:var(--white__background);
-}
-
 .footer{
   background-color: #111111;
 }

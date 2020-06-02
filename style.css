@@ -2,20 +2,21 @@ html {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  --blue__highlight: #1b2c4a;
-  --blue__highlight_transparent: rgba(27,44,58,0.45);
-  --white__background: #ffffff;
-  --font-family-text: 'Merriweather', serif;
-  --font-family-heading: 'Archivo Narrow', sans-serif;
-  background-color: var(--white__background);
+  --blue-highlight: #1b2c4a;
+  --blue-highlight_transparent: rgba(27,44,58,0.45);
+  --white-background: #ffffff;
+  --font-family-text: 'Roboto', sans-serif;
+  --font-family-heading: 'Times New Roman', serif;
+  background-color: var(--white-background);
 }
 
 p, td {
   font-family: var(--font-family-text);
+  font-size: 14px;
 }
 
 .navbar{
-  background-color: var(--white__background);
+  background-color: var(--white-background);
 }
 .mainHeading {
   margin-top: 25vh;
@@ -26,32 +27,46 @@ p, td {
 .cardHeading {
   font-family: var(--font-family-heading);
 }
+.side-menu-icon{
+  position: fixed;
+  right: 90px;
+  padding: 2rem;
+}
+.side-menu-icon input{
+  /* display: none; */
+}
 
+.side-menu-options{
+  position: fixed;
+  right: 10px;
+  padding: 2rem;
+}
 .subHeading {
   line-height: 2;
+  font-size: 16px;
   font-family: var(--font-family-text);
 }
 section{
   margin-top: 3rem;
 }
-.section__heading {
+.section-heading {
   text-align: center;
   font-family: var(--font-family-heading);
 }
 
-.image__offset{
+.image-offset{
   margin-top: 25vh;
 }
 .specialization {
   padding: 2rem;
-  background-color: var(--white__background);
+  background-color: var(--white-background);
 }
 
 
-.bottom__border {
+.bottom-border {
   padding: 1rem;
   margin: .5rem;
-  border-bottom: 1px solid var(--blue__highlight);
+  border-bottom: 1px solid var(--blue-highlight);
 }
 
 .remove {
@@ -91,29 +106,29 @@ a:hover {
   text-decoration: none !important;
 }
 
-.btn__action {
+.btn-action {
   padding: 10px;
   margin-top: 10px;
-  color: var(--blue__highlight);
-  border: 2px solid var(--blue__highlight);
-  background-color: var(--white__background);
+  color: var(--blue-highlight);
+  border: 2px solid var(--blue-highlight);
+  background-color: var(--white-background);
 }
 
-.btn__action__outline__rounded {
+.btn-action-outline-rounded {
   padding: 10px;
   margin-top: 10px;
   border-radius: 50%;
-  color: var(--blue__highlight);
-  border: 2px solid var(--blue__highlight);
-  background-color: var(--white__background);
+  color: var(--blue-highlight);
+  border: 2px solid var(--blue-highlight);
+  background-color: var(--white-background);
 }
 
-.btn__action:hover {
-  color: var(--blue__highlight);
+.btn-action:hover {
+  color: var(--blue-highlight);
   border-radius: 10px 0px 10px 0px;
 }
 
-.btn__submit {
+.btn-submit {
   float: right;
 }
 .cardIcons{
@@ -133,9 +148,42 @@ a:hover {
     background-position: center;
     background-repeat: no-repeat;
 }
+/* media queries hide-show */
+/* end of media queries hide-show */
 .specialization-card{
-  background-color: var(--white__background);
+  text-align: center;
+  background-color: var(--white-background);
 }
 .footer{
   background-color: #111111;
 }
+
+
+
+/* side menu */
+.control-me {
+  /* Default state */
+  display: none;
+}
+
+#toggle{
+  display:none;
+}
+
+#menu-icon{
+  position: fixed;
+  right: 160px;
+  padding: 2rem;
+}
+
+#toggle:checked ~ .control-me {
+  /* A toggled state! No JavaScript! */
+  display: block;
+  position: fixed;
+  top: 200px;
+  right:10px;
+  background-color: black;
+}
+
+
+/* side menu end */

@@ -13,8 +13,8 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-fixed-top">
-    <div class="containerd">
+  <!-- <nav class="navbar navbar-fixed-top">
+    <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
           aria-expanded="false" aria-controls="navbar">
@@ -32,10 +32,17 @@
           <li class="active"><a href="#">Software Development<span class="sr-only"></span></a></li>
         </ul>
       </div>
-      <!--/.nav-collapse -->
     </div>
-  </nav>
-
+  </nav> -->
+    <label id="menu-icon" for="toggle"><i class="glyphicon glyphicon-align-justify"></i></label>
+    <input type="checkbox" id="toggle"/>
+  <div class="control-me">
+    <ul>
+      <li><a href="#">Software Development</a></li>
+      <li><a href="#">Hiring and Placement</a></li>
+      <li><a href="#">Training and Consultancy</a></li>
+    </ul>
+  </div>
   <section class="container">
     <div class="row">
       <div class="col-md-6 col-xs-12">
@@ -56,14 +63,14 @@
         </section>
         <section class="row">
           <div class="col-md-4">
-            <a href="#contact" class="btn__action">
+            <a href="#contact" class="btn-action">
               <strong>Contact Us </strong> &nbsp;
               <span class="glyphicon glyphicon-arrow-right"></span>
             </a>
           </div>
         </section>
       </div>
-      <section class="col-md-offset-1 col-md-5 image__offset">
+      <section class="col-md-offset-1 col-md-5 image-offset">
         <object type="image/svg+xml" data="assets/undraw_modern_professional_yt9h.svg" style="width:80%">
           Your browser does not support SVG
         </object>
@@ -78,7 +85,9 @@
           <div class="cardIcons">
             <i class="fa fa-desktop fa-10x "></i>
           </div>
-          Software Development
+          <p>
+            Software Development
+          </p>
         </div>
       </div>
     </section>
@@ -90,18 +99,18 @@
       <section class="contact" id="contact">
         <div class="col-md-6 col-xs-12">
           <div class="row">
-            <div class="col-xs-12 bottom__border">
+            <div class="col-xs-12 bottom-border">
               <input type="email" name="" id="" placeholder="Email Id" class="remove">
             </div>
           </div>
           <div class="row">
-            <div class="col-xs-12 bottom__border">
+            <div class="col-xs-12 bottom-border">
               <textarea name="" id="" placeholder="Messsage" class="remove"></textarea>
             </div>
           </div>
           <div class="row">
             <div class="col-xs-12">
-              <button class="btn__submit btn__action">
+              <button class="btn-submit btn-action">
                 Submit &nbsp;
                 <span class="glyphicon glyphicon-send"></span>
               </button>
@@ -113,7 +122,7 @@
           <div class="row">
             <div class="col-xs-12">
               <h4 class="subHeading">
-                <span class="btn__action__outline__rounded glyphicon glyphicon-envelope">
+                <span class="btn-action-outline-rounded glyphicon glyphicon-envelope">
                 </span>&nbsp;
                 somemail@email.com
               </h4>
@@ -122,7 +131,7 @@
           <div class="row">
             <div class="col-xs-12">
               <h4 class="subHeading">
-                <span class="btn__action__outline__rounded glyphicon glyphicon-earphone">
+                <span class="btn-action-outline-rounded glyphicon glyphicon-earphone">
                 </span>&nbsp;
                 1234567890
               </h4>

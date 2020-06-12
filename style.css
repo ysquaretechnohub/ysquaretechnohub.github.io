@@ -148,17 +148,32 @@ a:hover {
 }
 
 .specialization {
-  min-height: 40vh;
+  min-height: 60vh;
   background-color: #1b2c4a;
 }
 
 .specialization-card {
+  height: 25vh;
   text-align: center;
   /* 0px 5px 25px 0 rgba(255, 0, 0, 1) */
   box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, .2), 
               20px 20px 0 0px var(--card-color), 
               25px 25px 10px 0px rgba(0, 0, 0, .2);
   background-color: var(--white-background);
+}
+
+.learn-more{
+  position: absolute;
+  left:25%;
+  bottom: 0px;
+  padding: 10px;
+  color: var(--white-background);
+  background-color: var(--card-color);
+}
+
+.learn-more:hover{
+  color: var(--white-background) !important;
+  
 }
 
 .footer {

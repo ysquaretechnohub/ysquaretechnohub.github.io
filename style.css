@@ -153,7 +153,7 @@ a:hover {
 }
 
 .specialization-card {
-  height: 25vh;
+  /* height: 25vh; */
   text-align: center;
   /* 0px 5px 25px 0 rgba(255, 0, 0, 1) */
   box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, .2), 
@@ -163,10 +163,9 @@ a:hover {
 }
 
 .learn-more{
-  position: absolute;
-  left:25%;
-  bottom: 0px;
   padding: 10px;
+  font-weight: bold;
+  display: inline-block;
   color: var(--white-background);
   background-color: var(--card-color);
 }

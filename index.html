@@ -118,20 +118,23 @@
   <div class="container">
     <div class="row">
       <section class="contact" id="contact">
-        <div class="col-md-6 col-xs-12">
+        <div class="col-md-6 col-xs-12 ">
           <div class="row">
-            <div class="col-xs-12 bottom-border">
-              <input type="email" name="" id="" placeholder="Email Id" class="remove">
+            <div class="col-xs-12">
+              <label for="emailId">Email Id</label>
+              <input type="email" name="" id="emailId" class="remove" required>
             </div>
           </div>
+          <br />
           <div class="row">
             <div class="col-xs-12 bottom-border">
-              <textarea name="" id="" placeholder="Messsage" class="remove"></textarea>
+              <label for="message">Message</label>
+              <textarea name="" id="message"  class="remove" required></textarea>
             </div>
           </div>
           <div class="row">
             <div class="col-xs-12">
-              <button class="btn-submit btn-action">
+              <button type="submit" class="btn-submit btn-action">
                 Submit &nbsp;
                 <span class="glyphicon glyphicon-send"></span>
               </button>

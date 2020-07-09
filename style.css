@@ -13,6 +13,8 @@ html {
   --blue-highlight: #1b2c4a;
   --blue-highlight_transparent: rgba(27, 44, 58, 0.45);
   --white-background: #ffffff;
+  --light-grey: #f2f2f2;
+  --red:#cb5144;
   --font-family-text: 'Roboto', sans-serif;
   --font-family-heading: 'Times New Roman', serif;
   --clr-dark: #333;
@@ -70,32 +72,35 @@ section {
   background-color: var(--white-background);
 }
 
-.bottom-border {
+/* .bottom-border {
   padding: 1rem;
   margin: .5rem;
   border-bottom: 1px solid var(--blue-highlight);
-}
+} */
 
 .remove {
-  border: none;
+  border: 1px solid var(--blue-highlight);
+  padding:5px;
   outline: none;
   width: 100%;
 }
 
 .remove:invalid {
-  border: none;
+  border: 1px solid var(--blue-highlight);
+  border-left: 5px solid var(--red);
   outline: none;
   box-shadow: none;
 }
 
 .remove:focus {
-  border: none;
+  border: 1px solid var(--blue-highlight);
+  border-left: 5px solid var(--blue-highlight);
   outline: none;
   box-shadow: none;
 }
 
 .remove:active {
-  border: none;
+  border: 1px solid var(--blue-highlight);
   outline: none;
   box-shadow: none;
 }
@@ -276,3 +281,14 @@ a:hover {
 
 
 /* side menu end */
+
+/* contact us form */
+.contact-container{
+  padding: 1.6rem;
+  background-color: var(--light-grey);
+}
+.contact-card{
+  margin: 1.6rem;
+  background-color: var(--white-background);
+}
+/* end of contact us */

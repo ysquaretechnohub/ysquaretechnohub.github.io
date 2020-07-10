@@ -57,7 +57,11 @@ body{
 section {
   margin-top: 3rem;
 }
-
+.error{
+  color:var(--red);
+  font-size: 10px;
+  font-weight: bold;
+}
 .section-heading {
   text-align: center;
   font-family: var(--font-family-heading);

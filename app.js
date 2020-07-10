@@ -1,10 +1,10 @@
 const navToggle = document.querySelector('.nav__toggle');
-const submitButton = document.querySelector('.submit-button');
 const emailField = document.querySelector('.email-field');
 const emailError = document.querySelector('.email-error');
+const submitButton = document.querySelector('.submit-button');
 const messageField = document.querySelector('.message-field');
 const messageError = document.querySelector('.message-error');
-const emailRegex = /^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/i
+const emailRegex = /^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/i;
 
 navToggle.addEventListener('click', () => {
   document.body.classList.toggle('nav-open');

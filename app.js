@@ -5,12 +5,22 @@ const submitButton = document.querySelector('.submit-button');
 const messageField = document.querySelector('.message-field');
 const messageError = document.querySelector('.message-error');
 const emailRegex = /^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/i;
+const postRequestCredentials = {
+  'method': 'POST',
+  'mode': 'cors',
+  'cache': 'no-cache',
+  'credentials': 'same-origin',
+  'headers': {
+    'Content-Type': 'application/json'
+  }
+};
 
 navToggle.addEventListener('click', () => {
   document.body.classList.toggle('nav-open');
 });
 
 submitButton.addEventListener('click', () => {
+  console.log('submit--->');
   const emailValidityStatus = checkEmailValidity(emailField.value);
   let errorFieldList = [];
   if(!emailValidityStatus.isValid){
@@ -21,11 +31,22 @@ submitButton.addEventListener('click', () => {
     errorFieldList = errorFieldList.filter(e => e === "email");
   }
   if(isEmptyString(messageField.value)){
-    addErrorMessageForField("message field cannot be empty", messageError);
+    addErrorMessageForField("Message cannot be empty", messageError);
     errorFieldList.push("message");
   } else {
     removeErrorMessageForField(messageError);
     errorFieldList = errorFieldList.filter(e => e === "message");
+  }
+  if(errorFieldList.length === 0){
+    const data = {
+      email: emailField.value,
+      message: messageField.value
+    };
+    console.log('data--->', data);
+    postData('http://localhost:3000/sendemail', data)
+  .then(data => {
+    alert(data); // JSON data parsed by `data.json()` call
+  });
   }
 });
 
@@ -54,3 +75,15 @@ const removeErrorMessageForField = (fieldName) => {
     fieldName.classList.remove('error');
     fieldName.innerHTML = '';
 };
+
+
+async function postData(url = '', data = {}) {
+  const response = await fetch(url, 
+  { 
+    ... postRequestCredentials, 
+    redirect: 'follow',
+    referrerPolicy: 'no-referrer',
+    body: JSON.stringify(data),
+  });
+  return response.json(); // parses JSON response into native JavaScript objects
+}

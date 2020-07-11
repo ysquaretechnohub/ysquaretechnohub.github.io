@@ -12,7 +12,7 @@ html {
   --card-color: #F9A826;
   --blue-highlight: #1b2c4a;
   --blue-highlight_transparent: rgba(27, 44, 58, 0.45);
-  --white-background: #ffffff;
+  --white-background: #fefefe;
   --light-grey: #f2f2f2;
   --red:#cb5144;
   --font-family-text: 'Roboto', sans-serif;
@@ -58,8 +58,10 @@ section {
   margin-top: 3rem;
 }
 .error{
-  color:var(--red);
-  font-size: 10px;
+  background-color:var(--red);
+  padding:4px;
+  color:var(--white-background);
+  font-size: 12px;
   font-weight: bold;
 }
 .section-heading {

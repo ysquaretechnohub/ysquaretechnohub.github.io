@@ -4,6 +4,7 @@ const emailError = document.querySelector('.email-error');
 const submitButton = document.querySelector('.submit-button');
 const messageField = document.querySelector('.message-field');
 const messageError = document.querySelector('.message-error');
+const messageSuccess = document.querySelector('.message-success');
 const emailRegex = /^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/i;
 const postRequestCredentials = {
   'method': 'POST',
@@ -20,7 +21,7 @@ navToggle.addEventListener('click', () => {
 });
 
 submitButton.addEventListener('click', () => {
-  console.log('submit--->');
+  submitButton.disabled = true;
   const emailValidityStatus = checkEmailValidity(emailField.value);
   let errorFieldList = [];
   if(!emailValidityStatus.isValid){
@@ -45,7 +46,11 @@ submitButton.addEventListener('click', () => {
     console.log('data--->', data);
     postData('https://blooming-wave-70183.herokuapp.com/sendemail', data)
   .then(data => {
-    alert(data); // JSON data parsed by `data.json()` call
+    addSuccessMessageForField('Thank You For Your Interest, We will get in touch with you shortly', messageSuccess);
+    setTimeout(() => {
+      submitButton.disabled = false;
+      removeSuccessMessageForField(messageSuccess);
+    }, 5000);
   });
   }
 });
@@ -74,6 +79,17 @@ const addErrorMessageForField = (message, fieldName) => {
 const removeErrorMessageForField = (fieldName) => {
     fieldName.classList.remove('error');
     fieldName.innerHTML = '';
+};
+
+
+const addSuccessMessageForField = (message, fieldName) => {
+  fieldName.classList.add('success');
+  fieldName.innerHTML = message;
+};
+
+const removeSuccessMessageForField = (fieldName) => {
+  fieldName.classList.remove('success');
+  fieldName.innerHTML = '';
 };
 
 

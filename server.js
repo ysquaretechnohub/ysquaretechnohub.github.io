@@ -2,7 +2,6 @@ const cors = require('cors');
 const express = require('express');
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
-const path = require('path');
 
 const senderEmail = 'ysquaresite@gmail.com'; 
 const senderPassword = 'Y5quare5ite@123';
@@ -49,10 +48,6 @@ transporter.sendMail(mailOptions, function(error, info){
     }
   }); 
 };
-
-app.get('/', function(req, res) {
-    res.sendFile(path.join(__dirname + '/index.html'));
-});
 
 app.post('^/sendemail/',(req, res) =>{
     const siteUserEmail = req.body.email;

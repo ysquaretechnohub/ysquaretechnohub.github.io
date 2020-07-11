@@ -43,7 +43,7 @@ submitButton.addEventListener('click', () => {
       message: messageField.value
     };
     console.log('data--->', data);
-    postData('http://localhost:3000/sendemail', data)
+    postData('https://blooming-wave-70183.herokuapp.com//sendemail', data)
   .then(data => {
     alert(data); // JSON data parsed by `data.json()` call
   });

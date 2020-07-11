@@ -2,10 +2,12 @@ const cors = require('cors');
 const express = require('express');
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
+const path = require('path');
 
 const senderEmail = 'ysquaresite@gmail.com'; 
 const senderPassword = 'Y5quare5ite@123';
 const receiverEmail = 'ysquaresup@gmail.com';
+const port = process.env.PORT || 3000;
 
 const app = express();
 
@@ -48,6 +50,10 @@ transporter.sendMail(mailOptions, function(error, info){
   }); 
 };
 
+app.get('/', function(req, res) {
+    res.sendFile(path.join(__dirname + '/index.html'));
+});
+
 app.post('^/sendemail/',(req, res) =>{
     const siteUserEmail = req.body.email;
     const siteUserMessage = req.body.message;
@@ -55,5 +61,5 @@ app.post('^/sendemail/',(req, res) =>{
     res.json({"message":"Worked"});
 });
 
-app.listen(3000);
+app.listen(port);
 console.log('server running at port 3000');

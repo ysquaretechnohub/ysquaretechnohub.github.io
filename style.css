@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Raleway:wght@400;700&display=swap');
-
-*,
-*::before,
-*::after {
+*, *::before, *::after {
   box-sizing: border-box;
 }
 
@@ -10,17 +7,18 @@ html {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  --yellow-highlight: #F9A826;
+  --red: #cb5144;
+  --green: #bbc04c;
+  --clr-dark: #333;
+  --light-grey: #f2f2f2;
   --card-color: #F9A826;
   --blue-highlight: #1b2c4a;
-  --blue-highlight_transparent: rgba(27, 44, 58, 0.45);
-  --white-background: #fefefe;
-  --light-grey: #f2f2f2;
-  --red:#cb5144;
-  --green:#bbc04c;
+  --yellow-highlight: #F9A826;
+  --white-background: #fcfcfc;
+  --social-background-color: #1b2c4a;
   --font-family-text: 'Raleway', sans-serif;
   --font-family-heading: 'Playfair Display', serif;
-  --clr-dark: #333;
+  --blue-highlight_transparent: rgba(27, 44, 58, 0.45);
   background-color: var(--white-background);
 }
 
@@ -28,14 +26,16 @@ html {
   --card-color: #cb5144;
 }
 
-.green-card{
+.green-card {
   --card-color: #bbc04c;
 }
+
 p, td {
   font-family: var(--font-family-text);
   font-size: 14px;
 }
-body{
+
+body {
   overflow-x: hidden;
   padding-top: 120px;
 }
@@ -59,22 +59,24 @@ body{
   /* border: 1px solid black; */
   font-family: var(--font-family-text);
 }
+
 /* 
 section {
   margin-top: 2rem;
 } */
-.error{
-  background-color:var(--red);
-  padding:4px;
-  color:var(--white-background);
+
+.error {
+  background-color: var(--red);
+  padding: 4px;
+  color: var(--white-background);
   font-size: 12px;
   font-weight: bold;
 }
 
-.success{
-  background-color:var(--green);
-  padding:8px;
-  color:var(--white-background);
+.success {
+  background-color: var(--green);
+  padding: 8px;
+  color: var(--white-background);
   font-size: 14px;
   font-weight: bold;
 }
@@ -101,7 +103,7 @@ section {
 
 .remove {
   border: 1px solid var(--blue-highlight);
-  padding:5px;
+  padding: 5px;
   outline: none;
   width: 100%;
 }
@@ -131,8 +133,8 @@ a {
 }
 
 button {
-  outline:none;
-  border:none;
+  outline: none;
+  border: none;
   font-family: var(--font-family-heading);
 }
 
@@ -160,11 +162,8 @@ a:hover {
 }
 
 .btn-action:hover {
-  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, .2), 
-  10px 10px 0 0px var(--card-color), 
-  15px 15px 10px 0px rgba(0, 0, 0, .2);
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, .2), 10px 10px 0 0px var(--card-color), 15px 15px 10px 0px rgba(0, 0, 0, .2);
   color: var(--white-background);
-  
 }
 
 .btn-submit {
@@ -172,7 +171,7 @@ a:hover {
 }
 
 .cardIcons {
-  padding : 1rem;
+  padding: 1rem;
   font-size: 4rem;
 }
 
@@ -185,13 +184,11 @@ a:hover {
   /* height: 25vh; */
   text-align: center;
   /* 0px 5px 25px 0 rgba(255, 0, 0, 1) */
-  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, .2), 
-              20px 20px 0 0px var(--card-color), 
-              25px 25px 10px 0px rgba(0, 0, 0, .2);
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, .2), 20px 20px 0 0px var(--card-color), 25px 25px 10px 0px rgba(0, 0, 0, .2);
   background-color: var(--white-background);
 }
 
-.learn-more{
+.learn-more {
   padding: 10px;
   font-weight: bold;
   display: inline-block;
@@ -199,9 +196,8 @@ a:hover {
   background-color: var(--card-color);
 }
 
-.learn-more:hover{
+.learn-more:hover {
   color: var(--white-background) !important;
-  
 }
 
 .footer {
@@ -209,40 +205,75 @@ a:hover {
   background-color: #111111;
 }
 
-/* navigation*/
-
-.navigation-bar{
-  background: var(--white-background);
- 
+.copyright{
+  color: var(--white-background);
+  font-family: var(--font-family-text);
+  font-size: 1.5rem;
+  padding: 1.2rem;
+}
+.social-icon div {
+  display: inline-block;
+  float: right;
+  font-size: 2rem;
+  background-color: var(--social-background-color);
+  color: var(--white-background);
+  padding: 1.2rem;
+  margin: 1.2rem;
+}
+.social-icon a{
+  color: var(--white-background)
+}
+.fb{
+  --social-background-color: var(--blue-highlight);
 }
 
-.navigation-bar li a{
+.insta{
+  --social-background-color: var(--red);
+}
+
+.linkedin{
+  --social-background-color: var(--yellow-highlight);
+}
+
+/* navigation*/
+
+.navigation-bar {
+  background: var(--white-background);
+}
+
+.navigation-bar li a {
   margin-top: 18px;
   color: var(--clr-dark)
 }
-.navigation-bar li a:hover{
+
+.navigation-bar li a:hover {
   background-color: var(--white-background) !important;
 }
 
-
-.active{
+.active {
   border-bottom: 3px solid var(--red);
 }
-.home a{
+
+.home a {
   margin-left: 0px;
 }
-.logo{
-   margin-top: 18px;
+
+.logo {
+  margin-top: 18px;
 }
+
 /* navigation end */
 
 /* contact us form */
-.contact-container{
+
+.contact-container {
   padding: 1.6rem;
   background-color: var(--light-grey);
 }
-.contact-card{
+
+.contact-card {
   margin: 1.6rem;
   background-color: var(--white-background);
 }
+
 /* end of contact us */

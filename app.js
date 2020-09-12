@@ -43,7 +43,6 @@ submitButton.addEventListener('click', () => {
       email: emailField.value,
       message: messageField.value
     };
-    console.log('data--->', data);
     postData('https://blooming-wave-70183.herokuapp.com/sendemail', data)
   .then(data => {
     addSuccessMessageForField('Thank You For Your Interest, We will get in touch with you shortly', messageSuccess);

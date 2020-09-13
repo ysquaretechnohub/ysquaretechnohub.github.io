@@ -238,7 +238,7 @@ a:hover {
 /* navigation*/
 
 .navigation-bar {
-  background: var(--white-background);
+  background-color:#ffffff;
 }
 
 .navigation-bar li a {

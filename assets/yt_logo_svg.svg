@@ -13,7 +13,7 @@
    id="svg2"
    version="1.1"
    sodipodi:docname="yt_logo_svg.svg"
-   inkscape:version="1.0 (6e3e5246a0, 2020-05-07)">
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)">
   <sodipodi:namedview
      showborder="false"
      showguides="true"
@@ -30,9 +30,9 @@
      inkscape:window-height="703"
      id="namedview21"
      showgrid="false"
-     inkscape:zoom="1"
-     inkscape:cx="291.08157"
-     inkscape:cy="149.23876"
+     inkscape:zoom="0.35355339"
+     inkscape:cx="635.93677"
+     inkscape:cy="-3.4027466"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -49,7 +49,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -88,16 +88,16 @@
      id="text847"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:1.25;font-family:Serif;-inkscape-font-specification:Serif;white-space:pre;shape-inside:url(#rect849);" />
   <g
-     transform="matrix(0.83556289,0,0,0.81768811,0.10530457,2.0687975)"
-     id="g1035">
+     id="g877"
+     transform="matrix(1.0495245,0,0,0.99892107,-14.32378,0.0226884)">
     <path
-       d="M 5.4770192,26.006101 H 225.52298 V 213.9939 H 5.4770192 Z"
-       style="fill:#ffffff;fill-opacity:0.936375;stroke:#c19244;stroke-width:9.55916;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 19.710989,32.155363 H 211.47024 V 192.47294 H 19.710989 Z"
+       style="fill:#ffffff;fill-opacity:0.936375;stroke:#c19244;stroke-width:8.24075;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect837" />
     <g
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:85.3132px;line-height:1.25;font-family:'Droid Serif';-inkscape-font-specification:'Droid Serif Bold';fill:#1e5c8b;fill-opacity:1;stroke-width:2.13283"
        id="text841"
-       transform="matrix(2.3317331,0,0,2.2103363,-147.93264,-129.17884)"
+       transform="matrix(1.9483096,0,0,1.8073657,-108.64211,-94.907203)"
        aria-label="Y">
       <path
          id="path843"
@@ -105,7 +105,7 @@
          d="m 94.845162,146.80396 v -4.5406 h 3.999056 q 1.041421,0 1.916212,-0.12497 0.91645,-0.12497 1.58296,-0.62485 0.66651,-0.54154 1.04142,-1.58296 0.41657,-1.04142 0.41657,-2.83267 v -11.8722 L 88.013441,94.941193 Q 87.388588,93.691488 86.805393,92.816694 86.263854,91.941901 85.597344,91.442019 84.930835,90.90048 84.056041,90.650539 83.222905,90.400598 81.9732,90.400598 H 80.848465 V 85.90166 h 28.576595 v 4.498938 h -1.45799 q -2.58273,0 -3.87409,1.041421 -1.24971,1.041421 -1.24971,2.791008 0,1.083078 0.37492,2.37444 0.41656,1.249705 0.91645,2.332783 l 6.33184,12.53871 q 1.33301,2.70769 2.16615,4.79053 0.8748,2.08285 1.58296,4.08237 0.87479,-2.24947 1.99953,-4.87385 1.16639,-2.66603 2.58272,-5.54036 l 4.95717,-10.205921 q 0.91645,-1.874557 1.16639,-3.124262 0.2916,-1.291362 0.2916,-1.999529 0,-2.207812 -1.41634,-3.207576 -1.37467,-0.999764 -4.20734,-0.999764 h -1.95787 V 85.90166 h 22.32807 v 4.498938 h -1.62462 q -1.08308,0 -1.87456,0.291598 -0.74982,0.291598 -1.45799,1.041421 -0.66651,0.749823 -1.41633,2.041185 -0.70817,1.291362 -1.70793,3.29089 l -14.49658,28.243338 v 11.66391 q 0,1.87456 0.37491,2.91598 0.37491,1.04142 0.99977,1.58296 0.66651,0.54154 1.49964,0.66651 0.8748,0.12497 1.87456,0.12497 h 4.20734 v 4.5406 z" />
     </g>
     <g
-       transform="matrix(3.6989763,0,0,3.9507387,-105.74592,-643.00845)"
+       transform="matrix(3.0907273,0,0,3.2304721,-73.392456,-515.05957)"
        style="fill:#ffffff"
        id="g887">
       <path
@@ -120,7 +120,7 @@
     <g
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:27.8676px;line-height:1.25;font-family:Serif;-inkscape-font-specification:'Serif Bold';display:inline;fill:#1e5c8b;fill-opacity:1;stroke:#1e5c8b;stroke-width:0.696692;stroke-opacity:1"
        id="text855"
-       transform="matrix(2.5085762,0,0,2.380325,-2.9027014,-378.35544)"
+       transform="matrix(2.0960732,0,0,1.9463635,12.539521,-298.65595)"
        aria-label="2">
       <g
          style="opacity:1"
@@ -136,15 +136,15 @@
       </g>
     </g>
     <text
-       transform="scale(0.98286803,1.0174306)"
+       transform="scale(0.99355274,1.0064891)"
        id="text917"
-       y="251.07758"
-       x="-0.96305567"
-       style="font-size:33.7421px;line-height:1.25;font-family:C059;-inkscape-font-specification:C059;stroke-width:0.843551"
+       y="228.32866"
+       x="14.209969"
+       style="font-size:29.0609px;line-height:1.25;font-family:C059;-inkscape-font-specification:C059;stroke-width:0.726523"
        xml:space="preserve"><tspan
-         style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold Italic';fill:#1e5c8b;fill-opacity:1;stroke:#1e5c8b;stroke-width:0.843551;stroke-opacity:1"
-         y="251.07758"
-         x="-0.96305567"
+         style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold Italic';fill:#1e5c8b;fill-opacity:1;stroke:#1e5c8b;stroke-width:0.726523;stroke-opacity:1"
+         y="228.32866"
+         x="14.209969"
          id="tspan915">TECHNOHUB</tspan></text>
   </g>
 </svg>

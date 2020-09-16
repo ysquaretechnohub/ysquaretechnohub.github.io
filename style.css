@@ -276,4 +276,23 @@ a:hover {
   background-color: var(--white-background);
 }
 
+.fab{
+  position: fixed;
+  bottom: 10vh;
+  right: 10vw;
+  display: inline-block;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, .2)
+}
+
+.fab a{
+  padding: 15px;
+  font-size:1.5rem; 
+  background-color: var(--red);
+  color: var(--white-background);
+}
+
+.fab-hide{
+  display: none;
+}
+
 /* end of contact us */

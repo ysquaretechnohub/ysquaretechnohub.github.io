@@ -2,6 +2,8 @@ const navToggle = document.querySelector('.nav__toggle');
 const emailField = document.querySelector('.email-field');
 const emailError = document.querySelector('.email-error');
 const submitButton = document.querySelector('.submit-button');
+const openFloatingMenu = document.querySelector('.open-menu');
+const closeFloatingMenu = document.querySelector('.closed-menu');
 const messageField = document.querySelector('.message-field');
 const messageError = document.querySelector('.message-error');
 const messageSuccess = document.querySelector('.message-success');
@@ -16,9 +18,10 @@ const postRequestCredentials = {
   }
 };
 
-navToggle.addEventListener('click', () => {
-  document.body.classList.toggle('nav-open');
-});
+const isFabOpen = true;
+// navToggle.addEventListener('click', () => {
+//   document.body.classList.toggle('nav-open');
+// });
 
 submitButton.addEventListener('click', () => {
   submitButton.disabled = true;
@@ -102,3 +105,14 @@ async function postData(url = '', data = {}) {
   });
   return response.json(); // parses JSON response into native JavaScript objects
 }
+
+openFloatingMenu.addEventListener('click', () => {
+  openFloatingMenu.classList.add('fab-hide');
+  closeFloatingMenu.classList.remove('fab-hide');
+});
+
+
+closeFloatingMenu.addEventListener('click', () => {
+  closeFloatingMenu.classList.add('fab-hide');
+  openFloatingMenu.classList.remove('fab-hide');
+});

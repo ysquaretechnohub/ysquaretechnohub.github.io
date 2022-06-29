@@ -296,3 +296,9 @@ a:hover {
 }
 
 /* end of contact us */
+@media screen and (min-width: 1400px) {
+  /* STYLES HERE */
+  .container{
+    width: 80% !important;
+  }
+}

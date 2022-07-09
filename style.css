@@ -32,7 +32,7 @@ html {
 
 p, td {
   font-family: var(--font-family-text);
-  font-size: 14px;
+  font-size: 16px;
 }
 
 body {
@@ -52,7 +52,7 @@ body {
 
 .subHeading {
   line-height: 1.6;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   /* margin-top: 1.6rem; */
   /* padding: 16px; */
   padding-top: 0px;
@@ -172,7 +172,7 @@ a:hover {
 
 .cardIcons {
   padding: 1rem;
-  font-size: 4rem;
+  font-size: 5rem;
 }
 
 .specialization {
@@ -188,6 +188,19 @@ a:hover {
   background-color: var(--white-background);
 }
 
+
+.map-card {
+  height: 25vh;
+  padding: 0px !important;
+  background-color: var(--white-background);
+}
+
+.map-card p {
+  font-weight: bolder;
+  padding: 15px;
+  background-color: #1b2c4a;
+  
+}
 .learn-more {
   padding: 10px;
   font-weight: bold;
@@ -201,6 +214,7 @@ a:hover {
 }
 
 .footer {
+  height: 40vh;
   padding: 2rem;
   background-color: #111111;
 }
@@ -208,7 +222,7 @@ a:hover {
 .copyright{
   color: var(--white-background);
   font-family: var(--font-family-text);
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   padding: 1.2rem;
 }
 .social-icon div {

@@ -181,14 +181,20 @@ a:hover {
 }
 
 .specialization-card {
-  /* height: 25vh; */
-  text-align: center;
-  /* 0px 5px 25px 0 rgba(255, 0, 0, 1) */
   box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, .2), 20px 20px 0 0px var(--card-color), 25px 25px 10px 0px rgba(0, 0, 0, .2);
   background-color: var(--white-background);
 }
 
-
+.specialization-card p{
+  padding: 25px;
+ 
+}
+.specialization-card h2{
+  background-color: var(--card-color);
+  color: var(--white-background);
+  margin-left: -30px !important;
+  padding: 10px;
+}
 .map-card {
   height: 25vh;
   padding: 0px !important;

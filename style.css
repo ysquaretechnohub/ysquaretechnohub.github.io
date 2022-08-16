@@ -260,7 +260,10 @@ a:hover {
 .navigation-bar {
   background-color:#ffffff;
 }
-
+.contact-text{
+  color: var(--clr-dark);
+  
+}
 .navigation-bar li a {
   margin-top: 18px;
   color: var(--clr-dark)

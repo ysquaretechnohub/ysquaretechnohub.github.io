@@ -8,7 +8,7 @@ const nagarbhaviaddress = '<iframe src="https://www.google.com/maps/embed?pb=!1m
 
 const loadHeader = (e) => {
 
-  if(header){
+  if (header) {
     header.innerHTML = `<div class="navbar navbar-fixed-top navigation-bar hidden-xs hidden-md">
     <div class="container">
       <div class="col-md-1 logo">
@@ -20,11 +20,11 @@ const loadHeader = (e) => {
         <img src="./assets/kaushalya.jpg" alt="kaushalya" style="width:100%">
       </div>
       <ul class="nav navbar-nav navbar-right">
-        <li class=${window.location.href.indexOf('index') !== -1 ? "active": ''}><a href="./index.html">Home</a></li>
-        <li class=${window.location.href.indexOf('skilldevelopment') !== -1 ? "active": ''}><a href="./skilldevelopment.html">Skill Development</a></li>
-        <li class=${window.location.href.indexOf('hiringandplacements') !== -1 ? "active": ''}><a href="./hiringandplacements.html">Hiring And Recruitment</a></li>
-        <li class=${window.location.href.indexOf('softwaredevelopment') !== -1 ? "active": ''}><a href="./softwaredevelopment.html">Software Development</a></li>
-        <li class=${window.location.href.indexOf('contactus') !== -1 ? "active": ''}><a href="./contactus.html">Contact Us</a></li>
+        <li class=${window.location.href.indexOf('index') !== -1 ? "activeLink" : ''}><a href="./index.html">Home</a></li>
+        <li class=${window.location.href.indexOf('skilldevelopment') !== -1 ? "activeLink" : ''}><a href="./skilldevelopment.html">Skill Development</a></li>
+        <li class=${window.location.href.indexOf('hiringandplacements') !== -1 ? "activeLink" : ''}><a href="./hiringandplacements.html">Hiring And Recruitment</a></li>
+        <li class=${window.location.href.indexOf('softwaredevelopment') !== -1 ? "activeLink" : ''}><a href="./softwaredevelopment.html">Software Development</a></li>
+        <li class=${window.location.href.indexOf('contactus') !== -1 ? "activeLink" : ''}><a href="./contactus.html">Contact Us</a></li>
       </ul>
     </div>
   </div>
@@ -33,8 +33,8 @@ const loadHeader = (e) => {
 }
 
 const loadContactCard = (e) => {
-  if(contactCard){
-    contactCard.innerHTML=` <div class="row">
+  if (contactCard) {
+    contactCard.innerHTML = ` <div class="row">
     <div class="col-xs-12">
       <h4 class="subHeading">
         <span class="btn-action-outline-rounded glyphicon glyphicon-envelope">
@@ -55,8 +55,8 @@ const loadContactCard = (e) => {
 }
 
 const loadBangaloreContactCard = (e) => {
-  if(bangaloreContactCard){
-    bangaloreContactCard.innerHTML=` <div class="row">
+  if (bangaloreContactCard) {
+    bangaloreContactCard.innerHTML = ` <div class="row">
     <div class="col-xs-12">
       <h4 class="subHeading">
         <span class="btn-action-outline-rounded glyphicon glyphicon-envelope">
@@ -77,8 +77,8 @@ const loadBangaloreContactCard = (e) => {
 }
 
 const loadRamnagarContactCard = (e) => {
-  if(ramnagarContactCard){
-    ramnagarContactCard.innerHTML=` <div class="row">
+  if (ramnagarContactCard) {
+    ramnagarContactCard.innerHTML = ` <div class="row">
     <div class="col-xs-12">
       <h4 class="subHeading">
         <span class="btn-action-outline-rounded glyphicon glyphicon-envelope">
@@ -99,29 +99,39 @@ const loadRamnagarContactCard = (e) => {
 }
 
 const loadFooter = (e) => {
-  footer.innerHTML = `<div class='container-fluid copyright'>
+  if(footer){
+  footer.innerHTML = `<footer class="footer-bs">
   <div class="row">
-    <div class='col-md-offset-1 col-md-3 map-card'>
-     ${ramnagarGoogleMap}
-      <p>
-        GNR Arcade,
-        First Floor, Above RBL Bank,
-        Next to Royal Enfield Show Room,
-        BM Road, Ramanagara-562159
-      </p>
+    <div class="col-md-offset-3 col-md-4 footer-nav animated fadeInUp">
+      <h4>Menu —</h4>
+      <div class="col-md-6">
+        <ul class="pages">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./skilldevelopment.html">Skill Development</a></li>
+          <li><a href="./hiringandplacements.html">Hiring and Recruitment</a></li>
+          <li><a href="./softwaredevelopment.html">Software Development</a></li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <ul class="list">
+          <li><a href="./contactus.html">Contact Us</a></li>
+          <li>&copy; Y Square Technohub</li>
+          <li>All Rights Reserved</li>
+        </ul>
+      </div>
     </div>
-    <div class='col-md-offset-1 col-md-3 map-card'>
-      ${nagarbhaviaddress}
-      <p>
-        No.111, Ground Floor,
-        Yuktha Yuvaanika,
-        7th Main, B.C.H.E Society,
-        Vidyagiri Layout, Nagarabhavi,
-        Bengaluru-560072
-      </p>
+    <div class="col-md-2 footer-social animated fadeInDown">
+      <h4>Follow Us</h4>
+      <ul>
+        <li><a href="https://www.facebook.com/profile.php?id=100047538086399">Facebook</a></li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Instagram</a></li>
+      </ul>
     </div>
   </div>
-</div>`
+</footer>
+`
+  }
 };
 
 
@@ -177,17 +187,17 @@ const loadFooter = (e) => {
 
 
 window.addEventListener ?
-    window.addEventListener("load", (e) => {
-      loadHeader(e);
-        loadContactCard(e);
-        loadBangaloreContactCard(e);
-        loadRamnagarContactCard(e)
-        loadFooter(e);
-    }, false) :
-    window.attachEvent && window.attachEvent("onload", (e) => {
-      loadHeader(e);
-      loadRamnagarContactCard(e);
-      loadBangaloreContactCard(e);
-        loadContactCard(e);
-        loadFooter(e);
-    });
+  window.addEventListener("load", (e) => {
+    loadHeader(e);
+    loadContactCard(e);
+    loadBangaloreContactCard(e);
+    loadRamnagarContactCard(e)
+    loadFooter(e);
+  }, false) :
+  window.attachEvent && window.attachEvent("onload", (e) => {
+    loadHeader(e);
+    loadRamnagarContactCard(e);
+    loadBangaloreContactCard(e);
+    loadContactCard(e);
+    loadFooter(e);
+  });

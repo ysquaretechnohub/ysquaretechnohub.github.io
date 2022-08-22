@@ -189,11 +189,23 @@ a:hover {
   padding: 25px;
  
 }
-.specialization-card h2{
+.specialization-card h1, .specialization-card h2 {
   background-color: var(--card-color);
   color: var(--white-background);
   margin-left: -30px !important;
   padding: 10px;
+}
+
+.specialization-card h3{
+  background-color: var(--card-color);
+  color: var(--white-background);
+  margin-left: -30px !important;
+  padding: 30px;
+  line-height: 1.2;
+}
+
+.courses{
+  font-size: 24px;
 }
 .map-card {
   height: 25vh;

@@ -23,7 +23,7 @@ const isFabOpen = true;
 //   document.body.classList.toggle('nav-open');
 // });
 
-submitButton.addEventListener('click', () => {
+submitButton && submitButton.addEventListener('click', () => {
   submitButton.disabled = true;
   const emailValidityStatus = checkEmailValidity(emailField.value);
   let errorFieldList = [];

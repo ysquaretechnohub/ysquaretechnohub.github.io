@@ -7,7 +7,7 @@ const ramnagarGoogleMap = '<iframe src="https://www.google.com/maps/embed?pb=!1m
 const nagarbhaviaddress = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.227363766768!2d77.51824741450136!3d12.957298018698582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3dde41c9d541%3A0xdd5400ac1d9e0a9a!2sYSquare%20Academy!5e0!3m2!1sen!2sin!4v1657218870898!5m2!1sen!2sin" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
 
 const loadHeader = (e) => {
-
+  console.log(window.location.href);
   if (header) {
     header.innerHTML = `<div class="navbar navbar-fixed-top navigation-bar hidden-xs hidden-md">
     <div class="container">
@@ -22,6 +22,19 @@ const loadHeader = (e) => {
       <ul class="nav navbar-nav navbar-right">
         <li class=${window.location.href.indexOf('index') !== -1 ? "activeLink" : ''}><a href="./index.html">Home</a></li>
         <li class=${window.location.href.indexOf('skilldevelopment') !== -1 ? "activeLink" : ''}><a href="./skilldevelopment.html">Skill Development</a></li>
+        <li class=${window.location.href.indexOf('courses') !== -1 ? "dropdown activeLink" : 'dropdown'}>
+          <a class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="true">
+            Courses
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+            <li><a href="./courses.html#hairstyle">Hair Stylist</a></li>
+            <li><a href="./courses.html#beautyTherapist">Beauty Therapist</a></li>
+            <li><a href="./courses.html#juniorSoftware">Junior Software Engineer</a></li>
+            <li><a href="./courses.html#dataEntry">Domestic Data Entry Operator</a></li>
+          </ul>
+        </li>
         <li class=${window.location.href.indexOf('hiringandplacements') !== -1 ? "activeLink" : ''}><a href="./hiringandplacements.html">Hiring And Recruitment</a></li>
         <li class=${window.location.href.indexOf('softwaredevelopment') !== -1 ? "activeLink" : ''}><a href="./softwaredevelopment.html">Software Development</a></li>
         <li class=${window.location.href.indexOf('contactus') !== -1 ? "activeLink" : ''}><a href="./contactus.html">Contact Us</a></li>

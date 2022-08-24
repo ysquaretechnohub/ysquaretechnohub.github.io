@@ -12,14 +12,11 @@ const loadHeader = (e) => {
     header.innerHTML = `<div class="navbar navbar-fixed-top navigation-bar hidden-xs hidden-md">
     <div class="container">
       <div class="col-md-1 logo">
-        <object type="image/svg+xml" data="assets/yt_logo_svg.svg" style="width:100%">
+        <object type="image/svg+xml" data="assets/yt_logo_svg.svg" style="width:115%">
           Your browser does not support SVG
         </object>
-      </div>
-      <div class="col-md-1 logo">
-        <img src="./assets/kaushalya.jpg" alt="kaushalya" style="width:100%">
-      </div>
-      <ul class="nav navbar-nav navbar-right">
+      </div>      
+      <ul class="nav navbar-nav navbar-center">
         <li class=${window.location.href.indexOf('index') !== -1 ? "activeLink" : ''}><a href="./index.html">Home</a></li>
         <li class=${window.location.href.indexOf('skilldevelopment') !== -1 ? "activeLink" : ''}><a href="./skilldevelopment.html">Skill Development</a></li>
         <li class=${window.location.href.indexOf('courses') !== -1 ? "dropdown activeLink" : 'dropdown'}>
@@ -39,6 +36,9 @@ const loadHeader = (e) => {
         <li class=${window.location.href.indexOf('softwaredevelopment') !== -1 ? "activeLink" : ''}><a href="./softwaredevelopment.html">Software Development</a></li>
         <li class=${window.location.href.indexOf('contactus') !== -1 ? "activeLink" : ''}><a href="./contactus.html">Contact Us</a></li>
       </ul>
+      <div class="col-md-1 logo">
+        <img src="./assets/kaushalya.jpg" alt="kaushalya" style="width:115%">
+      </div>
     </div>
   </div>
 `;
@@ -61,7 +61,7 @@ const loadContactCard = (e) => {
       <h4 class="subHeading">
         <span class="btn-action-outline-rounded glyphicon glyphicon-earphone">
         </span>&nbsp;
-        9008811833 / 9742512616
+        9008811833 / 9008811844
       </h4>
     </div>`;
   }
@@ -105,15 +105,15 @@ const loadRamnagarContactCard = (e) => {
       <h4 class="subHeading">
         <span class="btn-action-outline-rounded glyphicon glyphicon-earphone">
         </span>&nbsp;
-        9742512616
+        9008811844
       </h4>
     </div>`;
   }
 }
 
 const loadFooter = (e) => {
-  if(footer){
-  footer.innerHTML = `<footer class="footer-bs">
+  if (footer) {
+    footer.innerHTML = `<footer class="footer-bs">
   <div class="row">
     <div class="col-md-offset-3 col-md-4 footer-nav animated fadeInUp">
       <h4>Menu —</h4>

@@ -30,7 +30,7 @@ function showSlides() {
     } else {
         dots[2].className += " active"
     }
-    timeout = setTimeout(showSlides, 1000); // Change image every second
+    timeout = setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
 function changeSlide(input, i) {
 
